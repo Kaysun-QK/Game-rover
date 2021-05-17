@@ -2,7 +2,7 @@ body {
   background-color: #EEE7F5;
 }
 
-.slogan {
+h1 {
   display: flex;
   justify-content: center;
 }
