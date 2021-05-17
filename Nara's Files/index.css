@@ -2,3 +2,7 @@ body {
   background-color: #EEE7F5;
 }
 
+.slogan {
+  display: flex;
+  justify-content: center;
+}
