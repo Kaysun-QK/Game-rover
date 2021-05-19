@@ -1,3 +1,4 @@
+from os import link
 import requests
 from bs4 import BeautifulSoup
 
@@ -7,8 +8,8 @@ def steamSpider():
         sourceCode = requests.get(url)
         plainText = sourceCode.text
         soup = BeautifulSoup(plainText)
-        for link in soup.findAll('span', {'class': 'title'}):
-            href = link.get('href')
-            print(href)
+        for link in soup.findAll('div', {'class': 'col search_price responsive_secondrow' }):
+         titles = link.string
+         print(titles)
         
 steamSpider()
